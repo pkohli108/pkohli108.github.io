@@ -9,58 +9,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-        $('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
-            $('.nav-pills').addClass('nav-stacked');
-        });
+        $(document).ready(function() {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                var target = $(e.target).attr("href") // activated tab
+                    // alert(target);
+                console.log(target)
+            });
+            //http: //stackoverflow.com/questions/20705905/bootstrap-3-jquery-event-for-active-tab-change
+            $('.nav a').on('click', function() {
+                //$('.btn-navbar').click(); //bootstrap 2.x
+                $('.navbar-toggle').click() //bootstrap 3.x by Richard
+                console.log("Clicked")
 
-        //Unstack menu when not collapsed
-        $('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
-            $('.nav-pills').removeClass('nav-stacked');
+            });
+            // #http: //stackoverflow.com/questions/16680543/hide-twitter-bootstrap-nav-collapse-on-click
+
         });
     </script>
     <style>
-        .top5 {
-            margin-top: 5px;
-        }
-        
-        .top7 {
-            margin-top: 7px;
-        }
-        
-        .top10 {
-            margin-top: 10px;
-        }
-        
-        .top15 {
-            margin-top: 15px;
-        }
-        
-        .top17 {
-            margin-top: 17px;
-        }
-        
         .top30 {
             margin-top: 30px;
-        }
-        
-        .bottom5 {
-            margin-bottom: 5px;
-        }
-        
-        .bottom7 {
-            margin-bottom: 7px;
-        }
-        
-        .bottom10 {
-            margin-bottom: 10px;
-        }
-        
-        .bottom15 {
-            margin-bottom: 15px;
-        }
-        
-        .bottom17 {
-            margin-bottom: 17px;
         }
         
         .bottom30 {
