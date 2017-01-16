@@ -1,154 +1,149 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Punit Kohli</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-                var target = $(e.target).attr("href") // activated tab
-                    // alert(target);
-                console.log(target)
-            });
-            //http: //stackoverflow.com/questions/20705905/bootstrap-3-jquery-event-for-active-tab-change
-            $('.nav a').on('click', function() {
-                //$('.btn-navbar').click(); //bootstrap 2.x
-                $('.navbar-toggle').click() //bootstrap 3.x by Richard
-                console.log("Clicked")
-
-            });
-            // #http: //stackoverflow.com/questions/16680543/hide-twitter-bootstrap-nav-collapse-on-click
-
-        });
-    </script>
-    <style>
-        .top30 {
-            margin-top: 30px;
-        }
-        
-        .bottom30 {
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-            </button>
-        </div>
-        <h3 class="text-center"> Punit Kohli Research Group </h3>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <head>
+      <title>Punit Kohli</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                 var target = $(e.target).attr("href") // activated tab
+                     // alert(target);
+                 console.log(target)
+             });
+             //http: //stackoverflow.com/questions/20705905/bootstrap-3-jquery-event-for-active-tab-change
+             $('.nav a').on('click', function() {
+                 //$('.btn-navbar').click(); //bootstrap 2.x
+                 $('.navbar-toggle').click() //bootstrap 3.x by Richard
+                 console.log("Clicked")
+         
+             });
+             // #http: //stackoverflow.com/questions/16680543/hide-twitter-bootstrap-nav-collapse-on-click
+         
+         });
+      </script>
+      <style>
+         .top30 {
+         margin-top: 30px;
+         }
+         .bottom30 {
+         margin-bottom: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- http://www.code-pal.com/listify/-->
+      <!-- http://www.w3schools.com/HTML/html_links.asp -->
+      <!-- http://www.freeformatter.com/html-formatter.html -->
+	  <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>
+      </div>
+      <h3 class="text-center"> Punit Kohli Research Group </h3>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+               <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+               <li><a data-toggle="tab" href="#news">News</a></li>
+               <li><a data-toggle="tab" href="#research">Research</a></li>
+               <li><a data-toggle="tab" href="#publications">Publications</a></li>
+               <li><a data-toggle="tab" href="#group">Group</a></li>
+               <li><a data-toggle="tab" href="#contact">Contanct</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="tab-content">
+         <div id="home" class="tab-pane fade in active">
             <div class="container">
-
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                    <li><a data-toggle="tab" href="#news">News</a></li>
-                    <li><a data-toggle="tab" href="#research">Research</a></li>
-                    <li><a data-toggle="tab" href="#publications">Publications</a></li>
-                    <li><a data-toggle="tab" href="#group">Group</a></li>
-                    <li><a data-toggle="tab" href="#contact">Contanct</a></li>
-                </ul>
+               <div class="row top30 bottom30">
+                  <div class="col-md-12">
+                     <img style='float:left;width:165px;height:255px; margin-right:10px;' src="./image/kohli.jpg" />
+                     <p>Current: <del>Assistant</del> <del>Associate</del> Professor of Chemistry and Biochemistry at SIU Carbondale</p>
+                     <p>Previous: Postdoctoral Associate at University of Florida working with Dr.Chuck Martin
+                     <h5>Education</h5>
+                     <p>Ph.D., Michigan State University </p>
+                     <p>M. Appl. Sc., University of South Australia </p>
+                     <p>B. Tech., Indian Institute of Technology </p>
+                     <p> <strong>I am generally interested in Material Chemistry </strong> </p>
+                     <!-- 
+                        <h3> Attention </h3>
+                        <p class="lead"> I am currently looking for a Postdoctoral scholar. If interested send me an email with publications. Subject line : Prospecitive Postdoc NERD
+                        -->
+                     <h3> Prospective students </h3>
+                     <p class="lead"> Want to join the Nanoscience Exploration and Research Development (NERD) group?</p>
+                     <p> Check out my research and publications and then, if interested contact me mentioning how your own research interests match up with mine</p>
+                     <p> I will <strong> not </strong>respond to general queries. </p>
+                     <p> Send me an email at uname (AT) siu (DOT) edu with the subject line <strong> Prospective NERD </strong> where uname=pkohli</p>
+                  </div>
+               </div>
             </div>
-        </div>
-
-        <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-                <div class="container">
-                    <div class="row top30 bottom30">
-                        <div class="col-md-12">
-                            <img style='float:left;width:165px;height:255px; margin-right:10px;' src="./image/kohli.jpg" />
-                            <p>Current: <del>Assistant</del> <del>Associate</del> Professor of Chemistry and Biochemistry at SIU Carbondale</p>
-                            <p>Previous: Postdoctoral Associate at University of Florida working with Dr.Chuck Martin
-                                <h5>Education</h5>
-                                <p>Ph.D., Michigan State University </p>
-                                <p>M. Appl. Sc., University of South Australia </p>
-                                <p>B. Tech., Indian Institute of Technology </p>
-
-
-                                <p> <strong>I am interested in ... </strong> </p>
-                                <!-- 
-                                <h3> Attention </h3>
-                                <p class="lead"> I am currently looking for a Postdoctoral scholar. If interested send me an email with publications. Subject line : Prospecitive Postdoc NERD
-                                -->
-                                <h3> Prospective students </h3>
-                                <p class="lead"> Want to join the Nanoscience Exploration and Research Development (NERD) group?</p>
-
-                                <p> Check out my research and publications and then, if interested contact me mentioning how your own research interests match up with mine</p>
-                                <p> I will <strong> not </strong>respond to general queries. </p>
-                                <p> Send me an email at uname (AT) siu (DOT) edu with the subject line <strong> Prospective NERD </strong> where uname=pkohli</p>
-
-                        </div>
-                    </div>
-                </div>
-
+         </div>
+         <div id="contact" class="tab-pane fade">
+            <div class="container">
+               <div class="col-md-12 top30 bottom30">
+                  <address>
+                     <strong>Contact Information</strong><br> Department of Biochemistry<br> Southern Illinois University<br> Carbondale, IL 62901 <br> Phone: (618) 453-2895 <br> Fax: (618) 453-6408 <br>
+                  </address>
+                  <p>uname (AT) siu (DOT) edu where uname=pkohli</p>
+               </div>
             </div>
-            <div id="contact" class="tab-pane fade">
-                <div class="container">
-                    <div class="col-md-12 top30 bottom30">
-                        <address>
-                    <strong>Contact Information</strong><br> Department of Biochemistry<br> Southern Illinois University<br> Carbondale, IL 62901 <br> Phone: (618) 453-2895 <br> Fax: (618) 453-6408 <br>
-                    </address>
-                        <p>uname (AT) siu (DOT) edu where uname=pkohli</p>
-                    </div>
-                </div>
+         </div>
+         <div id="news" class="tab-pane fade">
+            <div class="container">
+               <div class="col-md-12 top30 bottom30">
+                  
+                  <ul>Item 1 </ul>
+               </div>
             </div>
-            <div id="news" class="tab-pane fade">
-                <div class="container">
-                    <div class="col-md-12 top30 bottom30">
-                        <ul>Item 1</ul>
-                        <ul>Item 2 </ul>
-                    </div>
-                </div>
+         </div>
+         <div id="publications" class="tab-pane fade">
+            <div class="container">
+               <div class="col-md-12 top30 bottom30">
+                  <ul>Publication 1</ul>
+               </div>
             </div>
-            <div id="publications" class="tab-pane fade">
-                <div class="container">
-                    <div class="col-md-12 top30 bottom30">
-                        <ul>Publication 1</ul>
-                    </div>
-                </div>
+         </div>
+         <div id="group" class="tab-pane fade">
+            <div class="container">
+               <div class="col-md-12 top30 bottom30">
+                  <h4> Current NERDS </h4>
+                  <ul> Student 1</ul>
+                  <ul> Student 2 </ul>
+                  <h4> Alumni </h4>
+                  <ul> Alumni 1 </ul>
+               </div>
             </div>
-            <div id="group" class="tab-pane fade">
-                <div class="container">
-                    <div class="col-md-12 top30 bottom30">
-                        <h4> Current NERDS </h4>
-                        <ul> Student 1</ul>
-                        <ul> Student 2 </ul>
-                        <h4> Alumni </h4>
-                        <ul> Alumni 1 </ul>
-                    </div>
-                </div>
+         </div>
+         <div id="research" class="tab-pane fade">
+            <div class="container">
+               <div class="col-md-12 top30 bottom30">
+                  <h4> Research Interests </h4>
+                  <ul>Fabrications for Nanoscale Devices for Lithography, Photonics and Optics. </ul>
+                  <ul>Synthesis, Characterization, and Application of Novel Nanoparticles/Nanotubes/Nanowires. </ul>
+                  <ul>Chemical and Biochemical Sensors using Biomimic; Self and Forced Assembly of Nanoparticles.</ul>
+                  <ul>Applications of Nanotube Membranes for Micro- and Nano-electronics. </ul>
+                  <ul>Transport Studies of Biopolymers through Nanotubes; Renewable Energy Materials.</ul>
+                  <h4> Current projects </h4>
+                  <ul>Research project 1</ul>
+                  <ul>Research proejct 2 </ul>
+                  <h4> Funding </h4>
+                  <ul> Funding agency 1 </ul>
+                  <ul> Funding agency 2 </ul>
+               </div>
             </div>
-            <div id="research" class="tab-pane fade">
-                <div class="container">
-                    <div class="col-md-12 top30 bottom30">
-                        <h4> Research Interests </h4>
-                        <ul>Fabrications for Nanoscale Devices for Lithography, Photonics and Optics. </ul>
-                        <ul>Synthesis, Characterization, and Application of Novel Nanoparticles/Nanotubes/Nanowires. </ul>
-                        <ul>Chemical and Biochemical Sensors using Biomimic; Self and Forced Assembly of Nanoparticles.</ul>
-                        <ul>Applications of Nanotube Membranes for Micro- and Nano-electronics. </ul>
-                        <ul>Transport Studies of Biopolymers through Nanotubes; Renewable Energy Materials.</ul>
-                        <h4> Current projects </h4>
-                        <ul>Research project 1</ul>
-                        <ul>Research proejct 2 </ul>
-                        <h4> Funding </h4>
-                        <ul> Funding agency 1 </ul>
-                        <ul> Funding agency 2 </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-</body>
-
+         </div>
+      </div>
+      </div>
+   </body>
 </html>
+
